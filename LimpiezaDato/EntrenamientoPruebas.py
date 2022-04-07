@@ -12,9 +12,9 @@ with open('/home/axel/Escritorio/RedNeuronal/Covidmetro/LimpiezaDato/salida3.csv
                         'mialgias','artral','ataedoge','rinorrea','polipnea','vomito',
                         'dolabdo','conjun','cianosis','inisubis','diabetes','epoc',
                         'asma','inmusupr','hiperten','vih_sida','otracon','enfcardi',
-                        'obesidad','insrencr','tabaquis','antivira','conocaso',
+                        'obesidad','insrencr','tabaquis','conocaso',
                         'contaves','concerdo','conanima','vacunado','puerperio',
-                        'diaspuerp','antipireticos','viaje','resdefin','evoluci',
+                        'diaspuerp','antipireticos','resdefin','evoluci',
                         'intubado','uci']
             writeEn = csv.DictWriter(entrenamiento,fieldnames=misDatos)
             writePr = csv.DictWriter(prueba,fieldnames=misDatos)
