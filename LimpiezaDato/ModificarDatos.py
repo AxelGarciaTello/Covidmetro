@@ -3,16 +3,16 @@ from datetime import date
 
 with open('/home/axel/Descargas/sisver_public.csv') as File:
     reader = csv.DictReader(File)
-    misDatos = [['sexo','entresi','evoluci','intubado','edad','estaemba',
-                'mesesemb','esindige','ocupacio','diassint','fiebre','tos',
-                'odinogia','disnea','irritabi','diarrea','dotoraci','calofrios',
-                'cefalea','mialgias','artral','ataedoge','rinorrea','polipnea',
-                'vomito','dolabdo','conjun','cianosis','inisubis','diabetes',
-                'epoc','asma','inmusupr','hiperten','vih_sida','otracon',
-                'enfcardi','obesidad','insrencr','tabaquis','antivira',
-                'conocaso','contaves','concerdo','conanima','vacunado',
-                'resdefin','puerperio','diaspuerp','antipireticos','uci',
-                'viaje']]
+    misDatos = [['sexo','entresi','edad','estaemba','mesesemb','esindige',
+                'ocupacio','diassint','fiebre','tos','odinogia','disnea',
+                'irritabi','diarrea','dotoraci','calofrios','cefalea',
+                'mialgias','artral','ataedoge','rinorrea','polipnea','vomito',
+                'dolabdo','conjun','cianosis','inisubis','diabetes','epoc',
+                'asma','inmusupr','hiperten','vih_sida','otracon','enfcardi',
+                'obesidad','insrencr','tabaquis','antivira','conocaso',
+                'contaves','concerdo','conanima','vacunado','puerperio',
+                'diaspuerp','antipireticos','viaje','resdefin','evoluci',
+                'intubado','uci']]
     miArchivo = open('salida.csv','w')
     with miArchivo:
         writer = csv.writer(miArchivo)
@@ -521,14 +521,13 @@ with open('/home/axel/Descargas/sisver_public.csv') as File:
             else:
                 viaje = 1
 
-            misDatos = [[sexo,entresi,evoluci,intubado,edad,estaemba,
-                        mesesemb,esindige,ocupacio,diassint,fiebre,tos,
-                        odinogia,disnea,irritabi,diarrea,dotoraci,calofrios,
-                        cefalea,mialgias,artral,ataedoge,rinorrea,polipnea,
-                        vomito,dolabdo,conjun,cianosis,inisubis,diabetes,
-                        epoc,asma,inmusupr,hiperten,vih_sida,otracon,
-                        enfcardi,obesidad,insrencr,tabaquis,antivira,
-                        conocaso,contaves,concerdo,conanima,vacunado,
-                        resdefin,puerperio,diaspuerp,antipireticos,uci,
-                        viaje]]
+            misDatos = [[sexo,entresi,edad,estaemba,mesesemb,esindige,ocupacio,
+                        diassint,fiebre,tos,odinogia,disnea,irritabi,diarrea,
+                        dotoraci,calofrios,cefalea,mialgias,artral,ataedoge,
+                        rinorrea,polipnea,vomito,dolabdo,conjun,cianosis,
+                        inisubis,diabetes,epoc,asma,inmusupr,hiperten,vih_sida,
+                        otracon,enfcardi,obesidad,insrencr,tabaquis,antivira,
+                        conocaso,contaves,concerdo,conanima,vacunado,puerperio,
+                        diaspuerp,antipireticos,viaje,resdefin,evoluci,intubado,
+                        uci]]
             writer.writerows(misDatos)
