@@ -43,7 +43,7 @@ model.fit(entrada,salida,epochs=25)
 
 score = model.evaluate(entradaP,salidaP)
 print("\n%s: %.2f%%" % (model.metrics_names[1],score[1]*100))
-print("\n%s: %.2f%%" % (model.metrics_names[2],score[2]*100))
+print("\n%s: %.2f%%" % (model.metrics_names[0],score[0]*100))
 
 '''predictions = model.predict(entradaP)
 with open('predicciones.csv','w') as miArchivo:
