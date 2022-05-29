@@ -28,7 +28,7 @@ Y = dataset[['resdefin','evoluci',
 
 #Crear el modelo
 model = Sequential()
-model.add(Dense(92,input_dim=46, activation='relu'))
+model.add(Dense(95,input_dim=46, activation='relu'))
 model.add(Dense(4,activation='sigmoid'))
 
 #Compila el modelo
@@ -43,6 +43,7 @@ model.fit(entrada,salida,epochs=25)
 
 score = model.evaluate(entradaP,salidaP)
 print("\n%s: %.2f%%" % (model.metrics_names[1],score[1]*100))
+print("\n%s: %.2f%%" % (model.metrics_names[2],score[2]*100))
 
 '''predictions = model.predict(entradaP)
 with open('predicciones.csv','w') as miArchivo:
